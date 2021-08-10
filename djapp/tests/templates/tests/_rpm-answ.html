@@ -1,0 +1,151 @@
+{% extends 'tests/base-answers.html' %}
+
+{% block content %}
+<div class="wrap">
+    <h1 class="title">Данные о результатах тестировани по методике прогрессивных матриц Равена.</h1>
+</div>
+<div class="wrap">
+    <a href="{{docx_url}}" class="link-button download-report">Скачать отчет</a>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="card-list-table person-data">
+            <tbody>
+                <tr>
+                    <td class="person-title">Фамилия:</td>
+                    <td>{{last_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Имя:</td>
+                    <td>{{first_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Отчество:</td>
+                    <td>{{patronymic}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время начала тестирования:</td>
+                    <td>{{start_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время окончания тестирования:</td>
+                    <td>{{end_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Всего дано ответов:</td>
+                    <td>{{results.sum_answers}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Всего дано правильных ответов:</td>
+                    <td>{{results.sum_cor_answers}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дано правильных ответов по группе-A:</td>
+                    <td>{{results.group_A.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дано правильных ответов по группе-B:</td>
+                    <td>{{results.group_B.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дано правильных ответов по группе-C:</td>
+                    <td>{{results.group_C.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дано правильных ответов по группе-D:</td>
+                    <td>{{results.group_D.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дано правильных ответов по группе-E:</td>
+                    <td>{{results.group_E.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Процент правильных ответов:</td>
+                    <td>{{results.percent_correct_results}}%</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Уровень IQ:</td>
+                    <td>{{results.iq}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="table-responsive card-list-table">
+            <thead>
+                <tr>
+                    <th>Номер вопроса</th>
+                    <th>Индекс (группа) вопроса</th>
+                    <th>Номер данного ответа</th>
+                    <th>Правильность ответа</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% for key, value in results.group_A.answers.items %}
+
+                <tr>
+                    <td data-title="Column #1">{{key|slice:"2:"}}</td>
+                    <td data-title="Column #2">A</td>
+                    <td data-title="Column #3">{{value.answer}}</td>
+                    <td data-title="Column #4">{{value.is_true}}</td>
+                </tr>
+
+                {% endfor %}
+
+
+                {% for key, value in results.group_B.answers.items %}
+
+                <tr>
+                    <td data-title="Column #1">{{key|slice:"2:"}}</td>
+                    <td data-title="Column #2">B</td>
+                    <td data-title="Column #3">{{value.answer}}</td>
+                    <td data-title="Column #4">{{value.is_true}}</td>
+                </tr>
+
+                {% endfor %}        
+                
+
+                {% for key, value in results.group_C.answers.items %}
+
+                <tr>
+                    <td data-title="Column #1">{{key|slice:"2:"}}</td>
+                    <td data-title="Column #2">C</td>
+                    <td data-title="Column #3">{{value.answer}}</td>
+                    <td data-title="Column #4">{{value.is_true}}</td>
+                </tr>
+
+                {% endfor %}
+
+
+                {% for key, value in results.group_D.answers.items %}
+
+                <tr>
+                    <td data-title="Column #1">{{key|slice:"2:"}}</td>
+                    <td data-title="Column #2">D</td>
+                    <td data-title="Column #3">{{value.answer}}</td>
+                    <td data-title="Column #4">{{value.is_true}}</td>
+                </tr>
+
+                {% endfor %}
+
+
+                {% for key, value in results.group_E.answers.items %}
+
+                <tr>
+                    <td data-title="Column #1">{{key|slice:"2:"}}</td>
+                    <td data-title="Column #2">E</td>
+                    <td data-title="Column #3">{{value.answer}}</td>
+                    <td data-title="Column #4">{{value.is_true}}</td>
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+{% endblock %}

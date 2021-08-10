@@ -1,0 +1,121 @@
+{% extends 'tests/base-answers.html' %}
+
+{% block content %}
+<div class="wrap">
+    <h1 class="title">Данные о результатах тестировани по методики определения уровня субъективного контроля (Методика УСК).</h1>
+</div>
+<div class="wrap">
+    <a href="{{docx_url}}" class="link-button download-report">Скачать отчет</a>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="card-list-table person-data">
+            <tbody>
+                <tr>
+                    <td class="person-title">Фамилия:</td>
+                    <td>{{last_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Имя:</td>
+                    <td>{{first_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Отчество:</td>
+                    <td>{{patronymic}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время начала тестирования:</td>
+                    <td>{{start_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время окончания тестирования:</td>
+                    <td>{{end_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Ио:</td>
+                    <td>{{results.scale_Io.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ио:</td>
+                    <td>{{results.scale_Io.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале -Ид:</td>
+                    <td>{{results.scale_Id.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ид:</td>
+                    <td>{{results.scale_Id.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Ин:</td>
+                    <td>{{results.scale_In.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ин:</td>
+                    <td>{{results.scale_In.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Ис:</td>
+                    <td>{{results.scale_Is.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ис:</td>
+                    <td>{{results.scale_Is.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Ип:</td>
+                    <td>{{results.scale_Ip.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ип:</td>
+                    <td>{{results.scale_Ip.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Им:</td>
+                    <td>{{results.scale_Im.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Им:</td>
+                    <td>{{results.scale_Im.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Из:</td>
+                    <td>{{results.scale_Iz.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Из:</td>
+                    <td>{{results.scale_Iz.sten}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="table-responsive card-list-table">
+            <thead>
+                <tr>
+                    <th>Номер вопроса</th>
+                    <th>Формулировка вопроса</th>
+                    <th>Бальная оценка данного ответа</th>
+                    <th>Формулировка данного ответа</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for answer in answers %}
+
+                <tr>
+                    <td data-title="Column #1">{{answer.0}}</td>
+                    <td data-title="Column #2">{{answer.1}}</td>
+                    <td data-title="Column #3">{{answer.2}}</td>
+                    <td data-title="Column #4">{{answer.3}}</td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+{% endblock %}

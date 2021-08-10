@@ -1,0 +1,79 @@
+{% extends 'tests/base-answers.html' %}
+{% load static %}
+
+{% block content %}
+<div class="wrap">
+    <a class="help-btn" href="/help" target="_blank">Помощь ?</a>
+    <h1 class="title">Список тестируемых.</h1>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="table-responsive card-list-table">
+            <thead>
+                <tr>
+                    <th>Login</th>
+                    <th>ID</th>
+                    <th>ФИО</th>
+                    <th>Документы для прохождения тестирования</th>
+                    <th>Результаты прохождения тестирования</th>
+                    <th>Ссылка перехода</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td data-title="Column #1">{{user.user_id}}</td>
+                    <td data-title="Column #2">{{user.uuid}}</td>
+                    <td data-title="Column #3">{{user.last_name}} {{user.first_name}} {{user.patronymic}}</td>
+                    <td data-title="Column #3">
+                        <div class="placemark-container">
+                            <a class="placemark" target="_blank" href="/testdocs/test_declaration/{{user.user_id.id}}" title="Заявление на тестирование">
+                                <img src="{% static 'tests/img/file_1.svg' %}" alt="Заявление на тестирование">
+                            </a>
+                            <a class="placemark" target="_blank" href="/testdocs/clarification_declaration/{{user.user_id.id}}" title="Заявление о разъяснении">
+                                <img src="{% static 'tests/img/file_2.svg' %}" alt="Заявление о разъяснении">
+                            </a>
+                        </div>
+                    </td>
+                    <td data-title="Column #5">
+                        <div class="placemark-container">
+                            {% for test in user.available_tests %}
+                                {% if test.ended %}
+                                    <a class="placemark green" target="_blank" title="{{test.name_test}}"
+                                    
+                                        {% if test.name_test == "Тест Кеттелла" %}
+                                            href="/kettell_answers/{{test.answer_id}}"
+                                        {% elif test.name_test == "Тест СМИЛ" %}
+                                            href="/mmpi_answers/{{test.answer_id}}"
+                                        {% elif test.name_test == "Тест УСК" %}
+                                            href="/scl_answers/{{test.answer_id}}"
+                                        {% elif test.name_test == "Тест для прогрессивных матриц Равена" %}
+                                            href="/rpm_answers/{{test.answer_id}}"
+                                        {% elif test.name_test == "Тест для сложных аналогий" %}
+                                            href="/com_analog_answers/{{test.answer_id}}"
+                                        {% elif test.name_test == "Тест для подразделений транспортной безопасности" %}
+                                            href="/tsafety_answers/{{test.answer_id}}"
+                                        {% endif %}                                   
+                                    
+                                    >&#10004</a>
+                                {% else %}
+                                    <a class="placemark red" title="{{test.name_test}}" href="#">&#10008</a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </td>
+                    <td data-title="Column #4" class="link-container">
+                        <a href="/summary/{{user.user_id}}"
+                            class="link-button 
+                                {% for test in user.available_tests %}
+                                    {% if not test.ended %}no-active{% endif %}
+                                {% endfor %}
+                            " target="_blank">Результаты</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

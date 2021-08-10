@@ -1,0 +1,497 @@
+{% extends 'tests/base-answers.html' %}
+
+{% block content %}
+<div class="wrap">
+    <h1 class="title">Данные о результатах тестировани по тесту Кеттелла.</h1>
+</div>
+<div class="wrap">
+    <a href="{{docx_url}}" class="link-button download-report">Скачать отчет</a>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="card-list-table person-data">
+            <tbody>
+                <tr>
+                    <td class="person-title">Фамилия:</td>
+                    <td>{{last_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Имя:</td>
+                    <td>{{first_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Отчество:</td>
+                    <td>{{patronymic}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время начала тестирования:</td>
+                    <td>{{start_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время окончания тестирования:</td>
+                    <td>{{end_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - A:
+                        <div class="tab-container">
+
+                        {% for key, value in results.factor_A.answers.items %}
+
+                        <div class="answ-tab 
+                            {% if value.rating == 0 %}
+                                red
+                            {% elif value.rating == 1 %}
+                                yellow
+                            {% elif value.rating == 2 %}
+                                green
+                            {% endif %}">{{key}} - {{value.answer}}
+                        </div>
+
+                        {% endfor %}
+
+                        </div>
+                    </td>
+                    <td>{{results.factor_A.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - A:</td>
+                    <td>{{results.factor_A.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - B:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_B.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_B.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - B:</td>
+                    <td>{{results.factor_B.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - C:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_C.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_C.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - C:</td>
+                    <td>{{results.factor_C.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - E:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_E.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_E.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - E:</td>
+                    <td>{{results.factor_E.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - F:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_F.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_F.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - F:</td>
+                    <td>{{results.factor_F.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - G:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_G.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_G.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - G:</td>
+                    <td>{{results.factor_G.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - H:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_H.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_H.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - H:</td>
+                    <td>{{results.factor_H.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - I:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_I.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_I.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - I:</td>
+                    <td>{{results.factor_I.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - L:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_L.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_L.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - L:</td>
+                    <td>{{results.factor_L.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - M:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_M.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_M.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - M:</td>
+                    <td>{{results.factor_M.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - N:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_N.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_N.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - N:</td>
+                    <td>{{results.factor_N.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - O:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_O.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_O.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - O:</td>
+                    <td>{{results.factor_O.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - Q1:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_Q1.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_Q1.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - Q1:</td>
+                    <td>{{results.factor_Q1.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - Q2:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_Q2.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_Q2.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - Q2:</td>
+                    <td>{{results.factor_Q2.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - Q3:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_Q3.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_Q3.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - Q3:</td>
+                    <td>{{results.factor_Q3.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по фактору - Q4:
+                        <div class="tab-container">
+
+                            {% for key, value in results.factor_Q4.answers.items %}
+    
+                            <div class="answ-tab 
+                                {% if value.rating == 0 %}
+                                    red
+                                {% elif value.rating == 1 %}
+                                    yellow
+                                {% elif value.rating == 2 %}
+                                    green
+                                {% endif %}">{{key}} - {{value.answer}}
+                            </div>
+    
+                            {% endfor %}
+                            
+                            </div>
+                    </td>
+                    <td>{{results.factor_Q4.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по фактору - Q4:</td>
+                    <td>{{results.factor_Q4.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по вторичному фактору - F1:</td>
+                    <td>{{results.factor_F1.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по вторичному фактору - F2:</td>
+                    <td>{{results.factor_F2.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по вторичному фактору - F3:</td>
+                    <td>{{results.factor_F3.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по вторичному фактору - F4:</td>
+                    <td>{{results.factor_F4.sten}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="table-responsive card-list-table">
+            <thead>
+                <tr>
+                    <th>Номер вопроса</th>
+                    <th>Формулировка вопроса</th>
+                    <th>Номер данного ответа</th>
+                    <th>Формулировка данного ответа</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for answer in answers %}
+
+                <tr>
+                    <td data-title="Column #1">{{answer.0}}</td>
+                    <td data-title="Column #2">{{answer.1}}</td>
+                    <td data-title="Column #3">{{answer.2}}</td>
+                    <td data-title="Column #4">{{answer.3}}</td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+{% endblock %}

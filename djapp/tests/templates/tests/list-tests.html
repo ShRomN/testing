@@ -1,0 +1,30 @@
+{% extends 'tests/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="time"></h1>
+</div>
+
+<div class="list-tests">
+    <fieldset class="person-data">
+        <h2 class="fs-title">Выберите доступный и требуемый для тестирования тест из перечня.</h2>
+        <div class="btn-container">
+        {% for test in avalable_tests %}
+            {% if test.name_test == "Тест Кеттелла" %}
+                <a href="/kettell_questions" class="{% if test.ended == True %}no-active{% endif %} action-button">{{test.name_test}}</a>
+            {% elif test.name_test == "Тест СМИЛ" %}
+                <a href="/mmpi_questions" class="{% if test.ended == True %}no-active{% endif %} action-button">{{test.name_test}}</a>
+            {% elif test.name_test == "Тест УСК" %}
+                <a href="/scl_questions" class="{% if test.ended == True %}no-active{% endif %} action-button">{{test.name_test}}</a>
+            {% elif test.name_test == "Тест для прогрессивных матриц Равена" %}
+                <a href="/rpm_questions" class="{% if test.ended == True %}no-active{% endif %} action-button">{{test.name_test}}</a>
+            {% elif test.name_test == "Тест для сложных аналогий" %}
+                <a href="/com_analog_questions" class="{% if test.ended == True %}no-active{% endif %} action-button">{{test.name_test}}</a>
+            {% elif test.name_test == "Тест для подразделений транспортной безопасности" %}
+                <a href="/tsafety_questions" class="{% if test.ended == True %}no-active{% endif %} action-button">{{test.name_test}}</a>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </fieldset>
+</div>
+{% endblock %}

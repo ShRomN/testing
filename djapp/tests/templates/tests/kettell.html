@@ -1,0 +1,74 @@
+{% extends 'tests/base.html' %}
+
+{% block content %}
+{% csrf_token %}
+<div id="container">
+    <h1 id="time" class="time no-active">120</h1>
+</div>
+
+<div class="msform">
+    <fieldset class="introduction">
+        <h2 class="fs-title">Перед началом тестирования ознакомтесь с инструкцией.</h2>
+        <h3 class="fs-subtitle">Вам предлагается ответить на ряд вопросов, цель которых – выяснить особенности Вашего характера, склонностей и интересов. Отвечая на вопрос, Вы можете выбрать один из трех предложенных вариантов ответов. Отвечая, помните: не тратьте времени на раздумья, давайте первый естественный ответ, который приходит Вам в голову; старайтесь избегать промежуточных, «неопределенных» ответов; не пропускайте ничего, обязательно отвечайте на все вопросы подряд. На решение теста Вам отводится 120 минут, таймер тестирования будет запущен сразу после нажатия на кнопку - "Начать тестирование".</h3>
+        <input type="button" id="start_test" name="start_test" class="next action-button start_test" value="Начать тестирование" />
+    </fieldset>
+    <!-- Отрисовка всех вопросов (кроме последнего). -->
+    {% for question in question_list %}
+    <fieldset>
+        <h2 class="fs-title">Вопрос №: {{question.number}}</h2>
+        <h3 class="fs-subtitle">{{question.question}}</h3>
+        <div class="answers">
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{question.number}}" value="a">
+                <div>
+                    a) {{question.answer_a}}
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{question.number}}" value="b">
+                <div>
+                    b) {{question.answer_b}}
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{question.number}}" value="c">
+                <div>
+                    c) {{question.answer_c}}
+                </div>
+            </div>
+        </div>
+        {% if not forloop.first %}
+        <input type="button" name="previous" class="previous action-button" value="Предыдущий вопрос" />
+        {% endif %}
+        <input type="button" name="next" class="no-active next action-button" value="Следующий вопрос" />
+    </fieldset>
+    {% endfor %}
+
+    <fieldset>
+        <h2 class="fs-title">Вопрос №: {{end_question.number}}</h2>
+        <h3 class="fs-subtitle">{{end_question.question}}</h3>
+        <div class="answers">
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{end_question.number}}" value="a">
+                <div>
+                    a) {{end_question.answer_a}}
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{end_question.number}}" value="b">
+                <div>
+                    b) {{end_question.answer_b}}
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{end_question.number}}" value="c">
+                <div>
+                    c) {{end_question.answer_c}}
+                </div>
+            </div>
+        </div>
+        <input type="button" name="previous" class="previous action-button" value="Предыдущий вопрос" />
+        <input type="button" id="end_test" name="end_test" class="no-active end-test action-button" value="Завершить тест" />
+    </fieldset>
+</div>
+{% endblock %}

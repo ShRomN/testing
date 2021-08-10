@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid wp14">
+	<w:body>
+		<w:p w14:paraId="7CB4BA2D" w14:textId="77777777" w:rsidR="009D43E6" w:rsidRPr="006E1186" w:rsidRDefault="009D43E6" w:rsidP="009D43E6">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+				<w:jc w:val="center"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:b/>
+					<w:bCs/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w14:paraId="46841B4B" w14:textId="13B40872" w:rsidR="009D43E6" w:rsidRPr="006E1186" w:rsidRDefault="009D43E6" w:rsidP="009D43E6">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+				<w:jc w:val="center"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:b/>
+					<w:bCs/>
+					<w:sz w:val="36"/>
+					<w:szCs w:val="36"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="006E1186">
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:b/>
+					<w:bCs/>
+					<w:sz w:val="36"/>
+					<w:szCs w:val="36"/>
+				</w:rPr>
+				<w:t>Результаты прохождения тестирования на</w:t>
+			</w:r>
+		</w:p>
+		<w:p w14:paraId="0004103F" w14:textId="5517DE4B" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="009D43E6" w:rsidP="009D43E6">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+				<w:jc w:val="center"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:b/>
+					<w:bCs/>
+					<w:sz w:val="32"/>
+					<w:szCs w:val="32"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="006E1186">
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:b/>
+					<w:bCs/>
+					<w:sz w:val="36"/>
+					<w:szCs w:val="36"/>
+				</w:rPr>
+				<w:t>«Сложные аналогии».</w:t>
+			</w:r>
+		</w:p>
+		<w:tbl>
+			<w:tblPr>
+				<w:tblStyle w:val="1"/>
+				<w:tblW w:w="9356" w:type="dxa"/>
+				<w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+			</w:tblPr>
+			<w:tblGrid>
+				<w:gridCol w:w="4106"/>
+				<w:gridCol w:w="5250"/>
+			</w:tblGrid>
+			<w:tr w:rsidR="00FA60CD" w:rsidRPr="006E1186" w14:paraId="2C5C3E08" w14:textId="77777777" w:rsidTr="00A65EE2">
+				<w:trPr>
+					<w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+						<w:tcW w:w="9356" w:type="dxa"/>
+						<w:gridSpan w:val="2"/>
+					</w:tcPr>
+					<w:p w14:paraId="36EFE621" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00A65EE2">
+						<w:pPr>
+							<w:jc w:val="center"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:sz w:val="28"/>
+								<w:szCs w:val="28"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:sz w:val="28"/>
+								<w:szCs w:val="28"/>
+							</w:rPr>
+							<w:t>Общая информация о прохождении теста</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr w:rsidR="00FA60CD" w:rsidRPr="005D083E" w14:paraId="3D2EE74A" w14:textId="77777777" w:rsidTr="00A65EE2">
+				<w:trPr>
+					<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+					<w:trHeight w:val="70"/>
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+						<w:tcW w:w="4106" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="69C48987" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>Идентификатор тестируемого:</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="5250" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="33DCEAF7" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40" w:line="360" w:lineRule="auto"/>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:lang w:val="en-US"/>
+							</w:rPr>
+							<w:t>{{context.id}}</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr w:rsidR="00FA60CD" w:rsidRPr="006E1186" w14:paraId="17CBEE57" w14:textId="77777777" w:rsidTr="00A65EE2">
+				<w:trPr>
+					<w:trHeight w:val="455"/>
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+						<w:tcW w:w="4106" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="4B6BC864" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:b w:val="0"/>
+								<w:bCs w:val="0"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>Дата и время начала тестирования:</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="5250" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="00F37B40" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40" w:line="360" w:lineRule="auto"/>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="000000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>{{context.start_testing_dtime}}</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr w:rsidR="00FA60CD" w:rsidRPr="006E1186" w14:paraId="40FA0990" w14:textId="77777777" w:rsidTr="00A65EE2">
+				<w:trPr>
+					<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+					<w:trHeight w:val="70"/>
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+						<w:tcW w:w="4106" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="058339E8" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:b w:val="0"/>
+								<w:bCs w:val="0"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>Дата и время окончания тестирования:</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="5250" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="16511E09" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40" w:line="360" w:lineRule="auto"/>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>{{context.end_testing_dtime}}</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+		</w:tbl>
+		<w:p w14:paraId="534DA3AE" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+				<w:jc w:val="center"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:b/>
+					<w:bCs/>
+					<w:sz w:val="32"/>
+					<w:szCs w:val="32"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w14:paraId="648D1B95" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+				<w:jc w:val="center"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:sz w:val="28"/>
+					<w:szCs w:val="28"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="006E1186">
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:b/>
+					<w:bCs/>
+					<w:sz w:val="28"/>
+					<w:szCs w:val="28"/>
+				</w:rPr>
+				<w:t>Ответы данные тестируемым.</w:t>
+			</w:r>
+		</w:p>
+		<w:tbl>
+			<w:tblPr>
+				<w:tblStyle w:val="1"/>
+				<w:tblW w:w="9498" w:type="dxa"/>
+				<w:jc w:val="center"/>
+				<w:tblLayout w:type="fixed"/>
+				<w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+			</w:tblPr>
+			<w:tblGrid>
+				<w:gridCol w:w="1114"/>
+				<w:gridCol w:w="3630"/>
+				<w:gridCol w:w="3630"/>
+				<w:gridCol w:w="1124"/>
+			</w:tblGrid>
+			<w:tr w:rsidR="00FA60CD" w:rsidRPr="006E1186" w14:paraId="728A6C8A" w14:textId="77777777" w:rsidTr="005D083E">
+				<w:trPr>
+					<w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+					<w:trHeight w:val="617"/>
+					<w:jc w:val="center"/>
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+						<w:tcW w:w="1129" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="75E1B66F" w14:textId="368BE730" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+						<w:pPr>
+							<w:jc w:val="center"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>Номер вопроса</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="3686" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="6F20B0F0" w14:textId="5DFAFAC7" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+						<w:pPr>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>Пара слов для подбора аналогии (вопрос)</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="3686" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="7335388E" w14:textId="6D6F4558" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+						<w:pPr>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>Подобранная аналогия (ответ)</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="1139" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="5BC795D2" w14:textId="615EB0CA" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+						<w:pPr>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>Шифр данного ответа</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			
+			{% for answer in context.answers %}
+			<w:tr w:rsidR="00FA60CD" w:rsidRPr="006E1186" w14:paraId="55859146" w14:textId="77777777" w:rsidTr="000267A8">
+				<w:trPr>
+					<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+					<w:jc w:val="center"/>
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+						<w:tcW w:w="1129" w:type="dxa"/>
+						<w:hideMark/>
+					</w:tcPr>
+					<w:p w14:paraId="4372EA09" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+						<w:pPr>
+							<w:jc w:val="center"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:color w:val="000000"/>
+							</w:rPr>
+							<w:t>{{answer.0}}</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="3686" w:type="dxa"/>
+					</w:tcPr>
+					<w:p w14:paraId="2A893782" w14:textId="040B7E91" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+						<w:pPr>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>{{answer.1}}</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="3686" w:type="dxa"/>
+						<w:hideMark/>
+					</w:tcPr>
+					<w:p w14:paraId="6D2340B4" w14:textId="3E000D53" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+						<w:pPr>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:b/>
+								<w:bCs/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>{{answer.2}}</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="1139" w:type="dxa"/>
+					</w:tcPr>
+					<w:p w14:paraId="7C76285B" w14:textId="1C51F92D" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+						<w:pPr>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:color w:val="000000"/>
+							</w:rPr>
+							<w:t>{{answer.3}}</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			{% endfor %}
+			
+		</w:tbl>
+		<w:p w14:paraId="61989C52" w14:textId="77777777" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+				<w:jc w:val="center"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:b/>
+					<w:bCs/>
+					<w:sz w:val="28"/>
+					<w:szCs w:val="28"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w14:paraId="37CF15EB" w14:textId="1186207A" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="00FA60CD">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="240" w:lineRule="auto"/>
+				<w:jc w:val="center"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:sz w:val="28"/>
+					<w:szCs w:val="28"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="006E1186">
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:b/>
+					<w:bCs/>
+					<w:sz w:val="28"/>
+					<w:szCs w:val="28"/>
+				</w:rPr>
+				<w:t>Обработка данных ответов.</w:t>
+			</w:r>
+		</w:p>
+		<w:tbl>
+			<w:tblPr>
+				<w:tblStyle w:val="1"/>
+				<w:tblW w:w="0" w:type="auto"/>
+				<w:jc w:val="center"/>
+				<w:tblLayout w:type="fixed"/>
+				<w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+			</w:tblPr>
+			<w:tblGrid>
+				<w:gridCol w:w="3539"/>
+				<w:gridCol w:w="2410"/>
+			</w:tblGrid>
+			<w:tr w:rsidR="00FA60CD" w:rsidRPr="006E1186" w14:paraId="237FAF94" w14:textId="77777777" w:rsidTr="00FA60CD">
+				<w:trPr>
+					<w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+					<w:cantSplit/>
+					<w:trHeight w:val="70"/>
+					<w:jc w:val="center"/>
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+						<w:tcW w:w="3539" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="1E889DD5" w14:textId="12F6A39B" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>Всего ответов в тесте:</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2410" w:type="dxa"/>
+						<w:vAlign w:val="center"/>
+					</w:tcPr>
+					<w:p w14:paraId="7A1BB676" w14:textId="3A3124AC" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40"/>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="100000000000" w:firstRow="1" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:b w:val="0"/>
+								<w:bCs w:val="0"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:b w:val="0"/>
+								<w:bCs w:val="0"/>
+							</w:rPr>
+							<w:t>{{context.total_answers}}</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+			<w:tr w:rsidR="00FA60CD" w:rsidRPr="006E1186" w14:paraId="112171FF" w14:textId="77777777" w:rsidTr="00FA60CD">
+				<w:trPr>
+					<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+					<w:jc w:val="center"/>
+				</w:trPr>
+				<w:tc>
+					<w:tcPr>
+						<w:cnfStyle w:val="001000000000" w:firstRow="0" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="0" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+						<w:tcW w:w="3539" w:type="dxa"/>
+						<w:hideMark/>
+					</w:tcPr>
+					<w:p w14:paraId="747F9249" w14:textId="31201901" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+							<w:t>Всего дано правильных ответов:</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+				<w:tc>
+					<w:tcPr>
+						<w:tcW w:w="2410" w:type="dxa"/>
+					</w:tcPr>
+					<w:p w14:paraId="5D1BEC56" w14:textId="122511D5" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="006E1186">
+						<w:pPr>
+							<w:spacing w:before="40" w:after="40"/>
+							<w:jc w:val="center"/>
+							<w:cnfStyle w:val="000000100000" w:firstRow="0" w:lastRow="0" w:firstColumn="0" w:lastColumn="0" w:oddVBand="0" w:evenVBand="0" w:oddHBand="1" w:evenHBand="0" w:firstRowFirstColumn="0" w:firstRowLastColumn="0" w:lastRowFirstColumn="0" w:lastRowLastColumn="0"/>
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+							</w:rPr>
+						</w:pPr>
+						<w:r w:rsidRPr="006E1186">
+							<w:rPr>
+								<w:rFonts w:cstheme="minorHAnsi"/>
+								<w:color w:val="000000"/>
+							</w:rPr>
+							<w:t>{{context.total_correct_answers}}</w:t>
+						</w:r>
+					</w:p>
+				</w:tc>
+			</w:tr>
+		</w:tbl>
+		<w:p w14:paraId="7E08EB88" w14:textId="77777777" w:rsidR="005D083E" w:rsidRPr="006E1186" w:rsidRDefault="005D083E" w:rsidP="005D083E">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="360" w:lineRule="auto"/>
+				<w:jc w:val="both"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:sz w:val="24"/>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+			</w:pPr>
+		</w:p>
+		<w:p w14:paraId="1339A895" w14:textId="004B372D" w:rsidR="00FA60CD" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="005D083E">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="360" w:lineRule="auto"/>
+				<w:jc w:val="both"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:sz w:val="24"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="006E1186">
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:sz w:val="24"/>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+				<w:t>Подпись уполномоченного лица</w:t>
+			</w:r>
+			<w:r w:rsidRPr="006E1186">
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:sz w:val="24"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve">______</w:t>
+			</w:r>
+			<w:r w:rsidRPr="006E1186">
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:sz w:val="24"/>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+				<w:t>_________________</w:t>
+			</w:r>
+			<w:r w:rsidRPr="006E1186">
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:sz w:val="24"/>
+					<w:szCs w:val="24"/>
+					<w:lang w:val="en-US"/>
+				</w:rPr>
+				<w:t xml:space="preserve">/_________________________/</w:t>
+			</w:r>
+		</w:p>
+		<w:p w14:paraId="52BDFCD5" w14:textId="208EC21C" w:rsidR="004F2BFB" w:rsidRPr="006E1186" w:rsidRDefault="00FA60CD" w:rsidP="005D083E">
+			<w:pPr>
+				<w:spacing w:after="0" w:line="360" w:lineRule="auto"/>
+				<w:ind w:left="6096"/>
+				<w:jc w:val="both"/>
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+				</w:rPr>
+			</w:pPr>
+			<w:r w:rsidRPr="006E1186">
+				<w:rPr>
+					<w:rFonts w:cstheme="minorHAnsi"/>
+					<w:sz w:val="24"/>
+					<w:szCs w:val="24"/>
+				</w:rPr>
+				<w:t>«___» ______________ 20___ г.</w:t>
+			</w:r>
+		</w:p>
+		<w:sectPr w:rsidR="004F2BFB" w:rsidRPr="006E1186" w:rsidSect="009D43E6">
+			<w:pgSz w:w="11906" w:h="16838"/>
+			<w:pgMar w:top="851" w:right="851" w:bottom="851" w:left="1701" w:header="709" w:footer="709" w:gutter="0"/>
+			<w:cols w:space="708"/>
+			<w:docGrid w:linePitch="360"/>
+		</w:sectPr>
+	</w:body>
+</w:document>

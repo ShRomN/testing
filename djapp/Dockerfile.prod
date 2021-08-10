@@ -1,0 +1,66 @@
+###########
+# BUILDER #
+###########
+
+# формирование образа на базе официального образа с Dockerhub
+FROM python:3.9.1-slim-buster as builder
+
+# задаем рабочую папку
+WORKDIR /usr/src/djapp
+
+# устанавливаем переменные окружения
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# установка дополнительных библиотек для работы с Postgres и подключения к базе данных
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends gcc
+
+# обновляем pip и 
+RUN pip install --upgrade pip
+RUN pip install flake8
+COPY . .
+
+# устанавливаем зависимости для Python
+COPY ./requirements.txt .
+RUN pip wheel --no-cache-dir --no-deps --wheel-dir /usr/src/djapp/wheels -r requirements.txt
+
+#########
+# FINAL #
+#########
+
+# формирование образа на базе официального образа с Dockerhub - python:3.9.1-alpine3.12
+FROM python:3.9.1-slim-buster
+
+# создаем группу djapp и пользователя djapp добавив его в группу
+RUN groupadd djgroup && useradd djuser && usermod -a -G djgroup djuser
+
+
+# устанавливаем переменные окружения
+ENV APP_HOME=/home/djapp
+RUN mkdir $APP_HOME
+WORKDIR $APP_HOME
+
+# обновляем pip и устанавливаем зависимости
+RUN apt-get update && apt-get install -y --no-install-recommends netcat
+COPY --from=builder /usr/src/djapp/wheels /wheels
+COPY --from=builder /usr/src/djapp/requirements.txt .
+RUN pip install --no-cache /wheels/*
+
+# копируем ранее созданный файл скрипта (entrypoint.prod.sh)
+COPY ./entrypoint.prod.sh $APP_HOME
+
+# копируем проект в контейнер
+COPY . $APP_HOME
+
+# меняем собственника скопированной директории с проектом
+RUN chown -R djuser:djgroup $APP_HOME
+
+# Устанавливаем флаг возможности исполнения файла - entrypoint.prod.sh
+RUN chmod ugo+x $APP_HOME/entrypoint.prod.sh
+
+# устанавливаем пользователя от чьего имении будет исполнятся
+USER djuser
+
+# запускаем файл скрипта (entrypoint.prod.sh)
+ENTRYPOINT ["/home/djapp/entrypoint.prod.sh"]

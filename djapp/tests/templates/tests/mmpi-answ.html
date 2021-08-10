@@ -1,0 +1,189 @@
+{% extends 'tests/base-answers.html' %}
+
+{% block content %}
+<div class="wrap">
+    <h1 class="title">Данные о результатах тестировани по стандартизированному многофакторному методу исследования личности (MMPI тест - СМИЛ).</h1>
+</div>
+<div class="wrap">
+    <a href="{{docx_url}}" class="link-button download-report">Скачать отчет</a>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="card-list-table person-data">
+            <tbody>
+                <tr>
+                    <td class="person-title">Фамилия:</td>
+                    <td>{{last_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Имя:</td>
+                    <td>{{first_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Отчество:</td>
+                    <td>{{patronymic}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время начала тестирования:</td>
+                    <td>{{start_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время окончания тестирования:</td>
+                    <td>{{end_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - L:</td>
+                    <td>{{results.scale_L.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - L:</td>
+                    <td>{{results.scale_L.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - F:</td>
+                    <td>{{results.scale_F.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - F:</td>
+                    <td>{{results.scale_F.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - K:</td>
+                    <td>{{results.scale_K.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - K:</td>
+                    <td>{{results.scale_K.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 1:</td>
+                    <td>{{results.scale_1.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма откорректированных баллов по шкале - 1:</td>
+                    <td>{{results.scale_1.cor_sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 1:</td>
+                    <td>{{results.scale_1.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 2:</td>
+                    <td>{{results.scale_2.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 2:</td>
+                    <td>{{results.scale_2.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 3:</td>
+                    <td>{{results.scale_3.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 3:</td>
+                    <td>{{results.scale_3.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 4:</td>
+                    <td>{{results.scale_4.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма откорректированных баллов по шкале - 4:</td>
+                    <td>{{results.scale_4.cor_sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 4:</td>
+                    <td>{{results.scale_4.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 5:</td>
+                    <td>{{results.scale_5.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 5:</td>
+                    <td>{{results.scale_5.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 6:</td>
+                    <td>{{results.scale_6.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 6:</td>
+                    <td>{{results.scale_6.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 7:</td>
+                    <td>{{results.scale_7.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма откорректированных баллов по шкале - 7:</td>
+                    <td>{{results.scale_7.cor_sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 7:</td>
+                    <td>{{results.scale_7.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 8:</td>
+                    <td>{{results.scale_8.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма откорректированных баллов по шкале - 8:</td>
+                    <td>{{results.scale_8.cor_sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 8:</td>
+                    <td>{{results.scale_8.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 9:</td>
+                    <td>{{results.scale_9.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма откорректированных баллов по шкале - 9:</td>
+                    <td>{{results.scale_9.cor_sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 9:</td>
+                    <td>{{results.scale_9.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - 10:</td>
+                    <td>{{results.scale_10.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - 10:</td>
+                    <td>{{results.scale_10.sten}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="table-responsive card-list-table">
+            <thead>
+                <tr>
+                    <th>Номер вопроса</th>
+                    <th>Формулировка вопроса</th>
+                    <th>Номер данного ответа</th>
+                    <th>Формулировка данного ответа</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for answer in answers %}
+
+                <tr>
+                    <td data-title="Column #1">{{answer.0}}</td>
+                    <td data-title="Column #2">{{answer.1}}</td>
+                    <td data-title="Column #3">{{answer.2}}</td>
+                    <td data-title="Column #4">{{answer.3}}</td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+{% endblock %}

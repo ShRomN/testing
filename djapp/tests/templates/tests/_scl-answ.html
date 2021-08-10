@@ -1,0 +1,303 @@
+{% extends 'tests/base-answers.html' %}
+
+{% block content %}
+<div class="wrap">
+    <h1 class="title">Данные о результатах тестировани по методики определения уровня субъективного контроля (Методика УСК).</h1>
+</div>
+<div class="wrap">
+    <a href="{{docx_url}}" class="link-button download-report">Скачать отчет</a>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="card-list-table person-data">
+            <tbody>
+                <tr>
+                    <td class="person-title">Фамилия:</td>
+                    <td>{{last_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Имя:</td>
+                    <td>{{first_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Отчество:</td>
+                    <td>{{patronymic}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время начала тестирования:</td>
+                    <td>{{start_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время окончания тестирования:</td>
+                    <td>{{end_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Ио:
+                        <p>Положительные - [ {{results.scale_Io.positive_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Io.answers.positive.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+
+                        <p>Отрицательные - [ {{results.scale_Io.negative_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Io.answers.negative.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{results.scale_Io.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ио:</td>
+                    <td>{{results.scale_Io.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале -Ид:
+                        <p>Положительные - [ {{results.scale_Id.positive_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Id.answers.positive.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+
+                        <p>Отрицательные - [ {{results.scale_Id.negative_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Id.answers.negative.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{results.scale_Id.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ид:</td>
+                    <td>{{results.scale_Id.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Ин:
+                        <p>Положительные - [ {{results.scale_In.positive_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_In.answers.positive.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+
+                        <p>Отрицательные - [ {{results.scale_In.negative_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_In.answers.negative.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{results.scale_In.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ин:</td>
+                    <td>{{results.scale_In.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Ис:
+                        <p>Положительные - [ {{results.scale_Is.positive_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Is.answers.positive.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+
+                        <p>Отрицательные - [ {{results.scale_Is.negative_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Is.answers.negative.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{results.scale_Is.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ис:</td>
+                    <td>{{results.scale_Is.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Ип:
+                        <p>Положительные - [ {{results.scale_Ip.positive_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Ip.answers.positive.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+
+                        <p>Отрицательные - [ {{results.scale_Ip.negative_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Ip.answers.negative.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{results.scale_Ip.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Ип:</td>
+                    <td>{{results.scale_Ip.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Им:
+                        <p>Положительные - [ {{results.scale_Im.positive_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Im.answers.positive.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+
+                        <p>Отрицательные - [ {{results.scale_Im.negative_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Im.answers.negative.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{results.scale_Im.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Им:</td>
+                    <td>{{results.scale_Im.sten}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Сумма сырых баллов по шкале - Из:
+                        <p>Положительные - [ {{results.scale_Iz.positive_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Iz.answers.positive.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+
+                        <p>Отрицательные - [ {{results.scale_Iz.negative_sum}} ]:</p>
+                        <div>
+                            <div class="tab-container">
+
+                                {% for key, value in results.scale_Iz.answers.negative.items %}
+        
+                                <div class="answ-tab green">{{key}} ({{value.answer}})</div>
+        
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{results.scale_Iz.sum}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Стен по шкале - Из:</td>
+                    <td>{{results.scale_Iz.sten}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="table-responsive card-list-table">
+            <thead>
+                <tr>
+                    <th>Номер вопроса</th>
+                    <th>Формулировка вопроса</th>
+                    <th>Бальная оценка данного ответа</th>
+                    <th>Формулировка данного ответа</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for answer in answers %}
+
+                <tr>
+                    <td data-title="Column #1">{{answer.0}}</td>
+                    <td data-title="Column #2">{{answer.1}}</td>
+                    <td data-title="Column #3">{{answer.2}}</td>
+                    <td data-title="Column #4">{{answer.3}}</td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+{% endblock %}

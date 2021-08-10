@@ -1,0 +1,75 @@
+{% extends 'tests/base-answers.html' %}
+
+{% block content %}
+<div class="wrap">
+    <h1 class="title">Данные о результатах тестировани по тесту для сложных аналогий.</h1>
+</div>
+<div class="wrap">
+    <a href="{{docx_url}}" class="link-button download-report">Скачать отчет</a>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="card-list-table person-data">
+            <tbody>
+                <tr>
+                    <td class="person-title">Фамилия:</td>
+                    <td>{{last_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Имя:</td>
+                    <td>{{first_name}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Отчество:</td>
+                    <td>{{patronymic}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время начала тестирования:</td>
+                    <td>{{start_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Дата и время окончания тестирования:</td>
+                    <td>{{end_testing_dtime}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Всего дано ответов:</td>
+                    <td>{{total_answers}}</td>
+                </tr>
+                <tr>
+                    <td class="person-title">Всего дано правильных ответов:</td>
+                    <td>{{total_correct_answers}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="wrap">
+    <div class="table-wrapper">
+        <table class="table-responsive card-list-table">
+            <thead>
+                <tr>
+                    <th>Номер вопроса</th>
+                    <th>Пара слов для подбора аналогии (вопрос)</th>
+                    <th>Подобранная аналогия (ответ)</th>
+                    <th>Шифр данного ответа</th>
+                    <th>Правильность ответа</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for answer in answers %}
+
+                <tr>
+                    <td data-title="Column #1">{{answer.0}}</td>
+                    <td data-title="Column #2">{{answer.1}}</td>
+                    <td data-title="Column #3">{{answer.2}}</td>
+                    <td data-title="Column #4">{{answer.3}}</td>
+                    <td data-title="Column #5">{{answer.4}}</td>
+                </tr>
+
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+{% endblock %}

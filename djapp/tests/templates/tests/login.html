@@ -1,0 +1,17 @@
+{% extends 'tests/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="time"></h1>
+</div>
+<form class="msform" method="POST">
+    <fieldset class="person-data">
+        {% csrf_token %}
+        <h2 class="fs-title">Вход</h2>
+        <h3 class="fs-subtitle">Войдите под своей учетной записью для начала тестирования.</h3>
+        {{form.username}}
+        {{form.password}}
+        <input type="submit" name="login" class="action-button" value="Войти" />
+    </fieldset>
+</form>
+{% endblock %}

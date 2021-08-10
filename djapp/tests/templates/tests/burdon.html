@@ -1,0 +1,10 @@
+{% extends 'tests/base.html' %}
+
+{% block content %}
+{% csrf_token %}
+<div id="burdon">
+    {% for symbol in text %}
+        <div class="symbol">{{symbol}}</div>
+    {% endfor %}
+</div>
+{% endblock %}

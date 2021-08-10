@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="answers-page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link href="{% static 'tests/css/styles.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="table-container large-screen">
+    <div class= "user-name">{{user_name}}</div>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+{% extends 'tests/base.html' %}
+
+{% block content %}
+{% csrf_token %}
+<div id="container">
+    <h1 id="time" class="time no-active">60</h1>
+</div>
+
+<div class="msform">
+    <fieldset class="introduction">
+        <h2 class="fs-title">Перед началом тестирования ознакомтесь с инструкцией.</h2>
+        <h3 class="fs-subtitle">Внимательно прочитайте каждое из утверждений вопросов и дайте один из следующих
+            ответов на каждый:<br>
+            – не согласен полностью;<br>
+            – не согласен частично;<br>
+            – скорее не согласен, чем согласен;<br>
+            – скорее согласен, чем не согласен;<br>
+            – согласен частично;<br>
+            – согласен полностью.<br>
+            На решение теста Вам отводится 60 минут, таймер тестирования будет запущен сразу после нажатия на кнопку
+            - "Начать тестирование".
+        </h3>
+        <input type="button" id="start_test" name="start_test" class="next action-button start_test"
+            value="Начать тестирование" />
+    </fieldset>
+    <!-- Отрисовка всех вопросов (кроме последнего). -->
+    {% for question in question_list %}
+    <fieldset>
+        <h2 class="fs-title">Вопрос №: {{question.number}}</h2>
+        <h3 class="fs-subtitle">{{question.question}}</h3>
+        <div class="answers">
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{question.number}}" value="-3">
+                <div>
+                    a) не согласен полностью;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{question.number}}" value="-2">
+                <div>
+                    b) не согласен частично;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{question.number}}" value="-1">
+                <div>
+                    c) скорее не согласен, чем согласен;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{question.number}}" value="1">
+                <div>
+                    d) скорее согласен, чем не согласен;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{question.number}}" value="2">
+                <div>
+                    e) согласен частично;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{question.number}}" value="3">
+                <div>
+                    f) согласен полностью.
+                </div>
+            </div>
+        </div>
+        {% if not forloop.first %}
+        <input type="button" name="previous" class="previous action-button" value="Предыдущий вопрос" />
+        {% endif %}
+        <input type="button" name="next" class="no-active next action-button" value="Следующий вопрос" />
+    </fieldset>
+    {% endfor %}
+
+    <fieldset>
+        <h2 class="fs-title">Вопрос №: {{end_question.number}}</h2>
+        <h3 class="fs-subtitle">{{end_question.question}}</h3>
+        <div class="answers">
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{end_question.number}}" value="-3">
+                <div>
+                    a) не согласен полностью;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{end_question.number}}" value="-2">
+                <div>
+                    b) не согласен частично;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{end_question.number}}" value="-1">
+                <div>
+                    c) скорее не согласен, чем согласен;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{end_question.number}}" value="1">
+                <div>
+                    d) скорее согласен, чем не согласен;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{end_question.number}}" value="2">
+                <div>
+                    e) согласен частично;
+                </div>
+            </div>
+            <div class="answer">
+                <input class="radio-btn" type="radio" name="a_{{end_question.number}}" value="3">
+                <div>
+                    f) согласен полностью.
+                </div>
+            </div>
+        </div>
+        <input type="button" name="previous" class="previous action-button" value="Предыдущий вопрос" />
+        <input type="button" id="end_test" name="end_test" class="no-active end-test action-button"
+            value="Завершить тест" />
+    </fieldset>
+</div>
+{% endblock %}

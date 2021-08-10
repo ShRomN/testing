@@ -1,0 +1,147 @@
+{% extends 'tests/base.html' %}
+
+{% block content %}
+{% csrf_token %}
+{% csrf_token %}
+<div id="container">
+    <h1 id="time" class="time no-active">60</h1>
+</div>
+
+<div class="msform">
+    <fieldset class="introduction">
+        <h2 class="fs-title">Перед началом тестирования ознакомтесь с инструкцией.</h2>
+        <h3 class="fs-subtitle">Сейчас вам будет предложен ряд графических рисунков. Всего их 60, они объединены в 5
+            групп. На каждом отдельном рисунке в верхней половине страницы находится прямоугольник, имеющий
+            определенный фон или составные элементы (фигуры), связанные между собой некоей зависимостью. В правом
+            нижнем углу прямоугольника имеется вырез - свободное, пустое место. Под прямоугольником находится 2 ряда
+            фрагментов (шесть или восемь), которые по форме и величине точно подходят к вырезу прямоугольника.
+            Каждый предложенный фрагмент имеет различный рисунок. Вашей задачей является найти в ряде фрагментов
+            тот, который точно вписался бы в свободное место. Предпосылкой правильного решения является логическое
+            рассуждение о том, по какому закону составлен рисунок в прямоугольнике, пустое место в котором вы должны
+            заполнить. Время на решение 60 заданий ограничено 60 минутами. Не задерживайтесь на первых заданиях
+            теста, так как сложность их все время увеличивается. Таймер тестирования будет запущен сразу после
+            нажатия на кнопку - "Начать тестирование".</h3>
+        <input type="button" id="start_test" name="start_test" class="next action-button start_test"
+            value="Начать тестирование" />
+    </fieldset>
+    <!-- Отрисовка всех вопросов (кроме последнего). -->
+    {% for question in question_list %}
+    <fieldset>
+        <h2 class="fs-title">Вопрос №: {{question.number}}</h2>
+        <div>
+            <img src="{{question.question_img.url}}" alt="{{question.group}}">
+        </div>
+        <div class="answers">
+            <div class="row">
+                <div class="answer content-img">
+                    <input class="radio-btn no-display" type="radio" name="a_{{question.number}}" value="1">
+                    <div><img src="{{question.answer_img_1.url}}" alt="{{question.group}}"></div>
+                </div>
+                <div class="answer content-img">
+                    <input class="radio-btn no-display" type="radio" name="a_{{question.number}}" value="2">
+                    <div><img src="{{question.answer_img_2.url}}" alt="{{question.group}}"></div>
+                </div>
+                <div class="answer content-img">
+                    <input class="radio-btn no-display" type="radio" name="a_{{question.number}}" value="3">
+                    <div><img src="{{question.answer_img_3.url}}" alt="{{question.group}}"></div>
+                </div>
+                {% if question.answer_img_7 %}
+                <div class="answer content-img">
+                    <input class="radio-btn no-display" type="radio" name="a_{{question.number}}" value="4">
+                    <div><img src="{{question.answer_img_4.url}}" alt="{{question.group}}"></div>
+                </div>
+                {% endif %}
+            </div>
+            <div class="row">
+                {% if not question.answer_img_7 %}
+                <div class="answer content-img">
+                    <input class="radio-btn no-display" type="radio" name="a_{{question.number}}" value="4">
+                    <div><img src="{{question.answer_img_4.url}}" alt="{{question.group}}"></div>
+                </div>
+                {% endif %}
+                <div class="answer content-img">
+                    <input class="radio-btn no-display" type="radio" name="a_{{question.number}}" value="5">
+                    <div><img src="{{question.answer_img_5.url}}" alt="{{question.group}}"></div>
+                </div>
+                <div class="answer content-img">
+                    <input class="radio-btn no-display" type="radio" name="a_{{question.number}}" value="6">
+                    <div><img src="{{question.answer_img_6.url}}" alt="{{question.group}}"></div>
+                </div>
+                {% if question.answer_img_7 %}
+                <div class="answer content-img">
+                    <input class="radio-btn no-display" type="radio" name="a_{{question.number}}" value="7">
+                    <div><img src="{{question.answer_img_7.url}}" alt="{{question.group}}"></div>
+                </div>
+                <div class="answer content-img">
+                    <input class="radio-btn no-display" type="radio" name="a_{{question.number}}" value="8">
+                    <div><img src="{{question.answer_img_8.url}}" alt="{{question.group}}"></div>
+                </div>                    
+                {% endif %}
+            </div>
+        </div>
+        {% if not forloop.first %}
+        <input type="button" name="previous" class="previous action-button" value="Предыдущий вопрос" />
+        {% endif %}
+        <input type="button" name="next" class="no-active next action-button" value="Следующий вопрос" />
+    </fieldset>
+    {% endfor %}
+
+    <fieldset>
+        <h2 class="fs-title">Вопрос №: {{end_question.number}}</h2>
+        <div>
+            <img src="{{end_question.question_img.url}}" alt="{{end_question.group}}">
+        </div>
+        <div class="answers">
+            <div class="row">
+            <div class="answer content-img">
+                <input class="radio-btn no-display" type="radio" name="a_{{end_question.number}}" value="1">
+                <div><img src="{{end_question.answer_img_1.url}}" alt="{{end_question.group}}"></div>
+            </div>
+            <div class="answer content-img">
+                <input class="radio-btn no-display" type="radio" name="a_{{end_question.number}}" value="2">
+                <div><img src="{{end_question.answer_img_2.url}}" alt="{{end_question.group}}"></div>
+            </div>
+            <div class="answer content-img">
+                <input class="radio-btn no-display" type="radio" name="a_{{end_question.number}}" value="3">
+                <div><img src="{{end_question.answer_img_3.url}}" alt="{{end_question.group}}"></div>
+            </div>
+            {% if end_question.answer_img_7 %}
+            <div class="answer content-img">
+                <input class="radio-btn no-display" type="radio" name="a_{{end_question.number}}" value="4">
+                <div><img src="{{end_question.answer_img_4.url}}" alt="{{end_question.group}}"></div>
+            </div>
+            {% endif %}
+        </div>
+        <div class="row">
+            {% if not end_question.answer_img_7 %}
+            <div class="answer content-img">
+                <input class="radio-btn no-display" type="radio" name="a_{{end_question.number}}" value="4">
+                <div><img src="{{end_question.answer_img_4.url}}" alt="{{end_question.group}}"></div>
+            </div>
+            {% endif %}
+            <div class="answer content-img">
+                <input class="radio-btn no-display" type="radio" name="a_{{end_question.number}}" value="5">
+                <div><img src="{{end_question.answer_img_5.url}}" alt="{{end_question.group}}"></div>
+            </div>
+            <div class="answer content-img">
+                <input class="radio-btn no-display" type="radio" name="a_{{end_question.number}}" value="6">
+                <div><img src="{{end_question.answer_img_6.url}}" alt="{{end_question.group}}"></div>
+            </div>
+            {% if end_question.answer_img_7 %}
+            <div class="answer content-img">
+                <input class="radio-btn no-display" type="radio" name="a_{{end_question.number}}" value="7">
+                <div><img src="{{end_question.answer_img_7.url}}" alt="{{end_question.group}}"></div>
+            </div>
+            <div class="answer content-img">
+                <input class="radio-btn no-display" type="radio" name="a_{{end_question.number}}" value="8">
+                <div><img src="{{end_question.answer_img_8.url}}" alt="{{end_question.group}}"></div>
+            </div>                    
+            {% endif %}   
+        </div>
+        </div>
+        <input type="button" name="previous" class="previous action-button" value="Предыдущий вопрос" />
+        <input type="button" id="end_test" name="end_test" class="no-active end-test action-button"
+            value="Завершить тест" />
+    </fieldset>
+</div>
+{% endblock %}
